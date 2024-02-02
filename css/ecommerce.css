@@ -320,3 +320,10 @@ section{
     cursor: pointer;
 }
 
+.total{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.5rem;
+    border-top: 1px solid black;
+}
+
