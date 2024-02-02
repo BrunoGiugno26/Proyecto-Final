@@ -1,0 +1,257 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+/* Estilos para el archivo ECOMMERCE.HTML */
+
+/*Parametros Globales */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    scroll-padding: 2rem;
+}
+
+body{
+    background-color: rgba(142, 213, 235, 0.973);
+    font-family: "Poppins", sans-serif;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.swiper-button-prev::after{
+    font-size: 25px;
+}
+
+.swiper-button-next::after{
+    font-size: 25px;
+}
+
+.swiper-button-next{
+    color: red;
+}
+
+.swiper-button-prev{
+    color: red;
+}
+
+.swiper-pagination-bullet{
+    background-color: #d3d2d2;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active{
+    background-color: red;
+}
+
+/* Header menu*/
+
+.menu{
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.navbar{
+    display: flex;
+}
+
+.menu-1{
+    margin-right: 180px;
+}
+
+.menu-2{
+    margin-left: 180px;
+    display: flex;
+    align-items: center;
+}
+
+.logo-1{
+    width: 0;
+}
+
+.logo-2{
+    width: 150px;
+}
+
+.socials{
+    display: flex;
+}
+
+.social{
+    margin: 0 10px;
+    padding-block: 8px;
+    padding-right: 24px;
+    height: 40px;
+    width: 40px;
+    border: 2px solid rgb(0, 26, 255);
+    border-radius: 50%;
+}
+
+.social:hover{
+    background-color: rgb(0, 89, 255);
+}
+
+.social img{
+    margin: 1px 0 0 10px;
+}
+
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a{
+    font-size: 18px;
+    padding: 20px;
+    color: white;
+    display: block;
+}
+
+.menu .navbar ul li a:hover{
+    color: rgb(0, 89, 255);
+}
+
+#menu{
+    display: none;
+}
+
+.menu-icono{
+    width: 25px;
+}
+
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+
+/* Slider*/
+
+.header-content{
+    margin-top: 200px;
+    padding-top: 50px;
+}
+
+.slider{
+    display: flex;
+    justify-content: center;
+}
+
+.slider-txt{
+    margin-left: 85%;
+    width: 50%;
+}
+
+.slider-txt h1{
+    font-size: 70px;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.slider-txt p{
+    font-size: 18px;
+    color: white;
+}
+
+.botones{
+    margin-top: 50px;
+}
+
+.btn-1{
+    display: inline-block;
+    padding: 15px 15px;
+    border: 2px solid rgb(0, 89, 255);
+    color: white;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-right: 20px;
+    border-radius: 50px;
+}
+
+.btn-1:hover{
+    background-color: rgb(0, 89, 255);
+}
+
+.slider-img{
+    width: 50%;
+}
+
+.slider-img img{
+    margin-right: 225px;
+    width: 550px;
+}
+
+/* Carrito de compras*/
+
+.shop-container{
+    max-width: 1068px;
+    margin: auto;
+    width: 100%;
+}
+
+section{
+    padding: 4rem 0 3rem;
+}
+
+#cart-icon{
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+.cart{
+    position: fixed;
+    top: 0;
+    right: 0;
+    right: -100%;
+    width: 360px;
+    height: 100vh;
+    everflow-y: auto;
+    everflow-x: hidden;
+    padding: 20px;
+    background-color:rgb(0, 89, 255);
+    box-shadow: -2px solid 4px hsl(0 4% 15% / 10%);
+    border: 1px solid rgb(0, 26, 255);
+    transition: 1.7s;
+}
+
+.cart.active{
+    right: 0;
+    transition: .5s;
+}
+
+.cart-title{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 2rem;
+}
+
+.cart-box{
+    display:grid;
+    grid-template-columns: 32% 50% 18%;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.cart-img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    padding: 10px;
+}
+
+.detail.box{
+    display: grid;
+    row-gap: .5rem;
+}
