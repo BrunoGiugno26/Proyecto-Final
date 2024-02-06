@@ -518,6 +518,26 @@ section{
     color: black;
     margin-bottom: 50px;
 }
+.info-img img{
+    width: 400px;
+    height: 200px;
+    margin-bottom: 25px;
+}
+
+.info-txt{
+    width: 100%;
+    text-align: start;
+}
+
+.info-txt p{
+    font-size: 18px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.btn-1{
+    font-size: 18px;
+}
 
 /* Seccion Horario html eccomerce*/
 
@@ -558,14 +578,12 @@ section{
 .map{
     filter: grayscale(100%) invert(92%) contrast(95%);
 }
+
 .footer{
-    padding: 100px;
-    margin: 100px;
-    width: 2000px;
-    background-color: black;
-    color: white;
+    padding: 100px 0px;
     display: flex;
     justify-content: space-between;
+    background-color: black;
 }
 
 .links h4{
@@ -625,5 +643,140 @@ section{
         display: none;
     }
 
+    .menu .navbar ul li{
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar{
+        display: inline;
+    }
+
+    .header-content{
+        padding: 30px;
+        margin-top: 100px;
+    }
+
+    .slider{
+        text-decoration: none;
+    }
+
+    .slider-txt{
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .slider-txt h1{
+        font-size: 50px;
+    }
+
+    .slider-txt p{
+        font-size: 16px;
+    }
+
+    .btn-1{
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .slider-img{
+        width: 100%;
+        text-align: center;
+    }
+
+    .slider-img img{
+        margin-left: 0px;
+        width: 100px;
+    }
+
+.swiper-horizontal > .swiper-pagination-bullet,
+.swiper-pagination-bullet,.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction{
+    bottom:-7px;
+    }
+
+    .info{
+        padding: 30px;
+        flex-direction: column;
+    }
     
+    .info-img{
+        width: 100%;
+        text-align: center;
+    }
+    
+    .info-img img{
+        width: 400px;
+        height: 200px;
+        margin-bottom: 25px;
+    }
+    
+    .info-txt{
+        width: 100%;
+        text-align: center;
+    }
+    
+    .info-txt p{
+        font-size: 16px;
+    }
+    
+    .btn-1{
+        font-size: 16px;
+    }
+    
+    .horario{
+        padding: 30px;
+        text-align:inherit;
+    }
+    
+    .horario-info h2{
+        font-size: 50px;
+        margin-bottom: 15px;
+    }
+    
+    .horario-txt{
+        flex-direction: column;
+    }
+    .socials{
+        display: flex;
+    }
+    
+    .social{
+        margin: 0 10px;
+        padding-block: 8px;
+        padding-right: 24px;
+        height: 40px;
+        width: 40px;
+        border: 2px solid rgb(0, 26, 255);
+        border-radius: 50%;
+    }
+    
+    .social:hover{
+        background-color: rgb(0, 89, 255);
+    }
+    
+    .social img{
+        margin: 1px 0 0 10px;
+    }
+    
+    .footer{
+        padding: 30px;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .links h4{
+        margin: 20px 0px 10px 0px;
+    }
 }
+
+
+.info-img{
+    width: 100%;
+    text-align: center;
+}
+
+
+
