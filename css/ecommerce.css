@@ -198,7 +198,7 @@ body{
     border: 3px solid rgb(0, 89, 255);
     color: white;
     background-color: black;
-    letter-spacing: 2px;
+    font-weight: 800;
     text-transform: uppercase;
     margin-right: 20px;
     border-radius: 50px;
@@ -209,11 +209,12 @@ body{
 }
 .btn-2{
     display: inline-block;
+    margin-top: 40px;
     padding: 15px 15px;
     border: 3px solid rgb(0, 89, 255);
     color: white;
     background-color: black;
-    letter-spacing: 2px;
+    font-weight: 800;
     text-transform: uppercase;
     margin-right: 20px;
     border-radius: 50px;
@@ -472,4 +473,157 @@ section{
     .cart{
         width: 280px;
     }
+}
+
+/* Parte de la seccion informacion*/
+
+.logo-info{
+    padding: 10px;
+    margin:0px 580px;
+}
+
+.info{
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.info-img{
+    width: 100%;
+}
+
+.info-img img{
+    width: 300px;
+    height: 300px;
+}
+
+.info-txt{
+    width: 50%;
+}
+.info-txt-right{
+    margin-left: 20px;
+}
+
+.info-txt h2{
+    font-size: 75px;
+    color: white;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-left: 40px;
+    margin-bottom: 25px;
+}
+
+.info-txt{
+    font-size: 18px;
+    color: black;
+    margin-bottom: 50px;
+}
+
+/* Seccion Horario html eccomerce*/
+
+.horario{
+    padding: 100px 0;
+    background-color: black;
+}
+
+.horario-info h2{
+    font-size: 75px;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.horario-txt{
+    display: flex;
+    justify-content: space-between;
+}
+
+.txt{
+    color: white;
+}
+
+.txt h4{
+    font-size: 18px;
+    color: gray;
+    margin-bottom: 30px;
+}
+
+.txt p{
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.map{
+    filter: grayscale(100%) invert(92%) contrast(95%);
+}
+.footer{
+    padding: 100px;
+    margin: 100px;
+    width: 2000px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.links h4{
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.links ul li a{
+    color: white;
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+.links ul li a:hover{
+    color: rgb(0, 89, 255);
+    cursor: pointer;
+}
+
+#span-footer{
+    font-size: 40px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+/* Parte Responsvie para dispositivos moviles ( Header y Footer)*/
+
+@media(max-width:991px){
+    .menu{
+        padding: 20px;
+        justify-content: space-between;
+    }
+
+    .menu-2{
+        display: none;
+    }
+
+    .logo-1{
+        width: 100px;
+    }
+
+    .logo-2{
+        width: 0;
+    }
+
+    .menu label{
+        display: initial;
+    }
+
+    .menu .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: black;
+        display: none;
+    }
+
+    
 }
