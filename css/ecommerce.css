@@ -327,3 +327,149 @@ section{
     border-top: 1px solid black;
 }
 
+.total-title{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.total-price{
+    margin-left: .5rem;
+}
+
+.btn-buy{
+    display: flex;
+    margin: 1.5rem auto 0 auto;
+    padding: 12px 20px;
+    border: none;
+    background-color: black;
+    color: aqua;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.btn-buy:hover{
+    background-color: aqua;
+    color: white;
+}
+
+#cart-close{
+    position: absolute;
+    top: 1rem;
+    right: .8rem;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+}
+
+/* Shop Section*/
+
+.shop-container{
+    margin-top: 2rem;
+}
+
+.section-title{
+    font-style: 1.5rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.shop-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,auto));
+    gap: 2rem;
+}
+
+.product-box{
+    position: relative;
+    transition: .5s ease-in-out;
+}
+
+.product-box:hover{
+    padding: 10px;
+    border: 2px solid black;
+}
+
+.product-img{
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    margin-bottom: .5rem;
+}
+
+.product-title{
+    font-size: 1.5rem;
+    color: black;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: .5rem;
+}
+
+.product-price{
+    font-weight: 500;
+    color: black;
+    font-size: 1.8rem;
+}
+
+.add-cart{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: black;
+    color: white;
+    padding: 11px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.add-cart:hover{
+    background-color: aqua;
+    color: white;
+}
+
+/* Responsive del catalogo de productos de el html principal ecommerce.html*/
+
+@media (max-width:100px){
+    .nav{
+        padding: 15px;
+    }
+    .container{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .section{
+        padding: 3rem 0 rem;
+    }
+
+    .shop{
+        margin-top: 2rem;
+    }
+}
+
+/*Para dispositivos medianos*/
+
+@media (max-width:400px){
+    .nav{
+        padding: 11px;
+    }
+    .logo{
+        font-size: 1rem;
+    }
+    .cart{
+        width:320px
+    }
+}
+
+/* Para dispositivos pequeños*/
+
+@media (max-width:360px){
+    .shop{
+        margin-top: 1rem;
+    }
+    .cart{
+        width: 280px;
+    }
+}
