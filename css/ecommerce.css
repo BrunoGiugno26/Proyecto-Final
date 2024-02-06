@@ -497,9 +497,6 @@ section{
     height: 300px;
 }
 
-.info-txt{
-    width: 50%;
-}
 .info-txt-right{
     margin-left: 20px;
 }
@@ -514,6 +511,8 @@ section{
 }
 
 .info-txt{
+    width: 100%;
+    text-align: start;
     font-size: 18px;
     color: black;
     margin-bottom: 50px;
@@ -522,11 +521,6 @@ section{
     width: 400px;
     height: 200px;
     margin-bottom: 25px;
-}
-
-.info-txt{
-    width: 100%;
-    text-align: start;
 }
 
 .info-txt p{
