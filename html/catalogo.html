@@ -3,9 +3,248 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Horarios</title>
+    <title>Catalogo</title>
+    <!-- Box iconos -->
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
+    <!--Styles-->
+    <link rel="stylesheet" href="/css/ecommerce.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
 </head>
 <body>
+    <header>
+       
+        <div class="menu container">
+            <img class="logo-1" src="/images/perro.svg" alt="">
+            <input type="checkbox" id="menu">
+            <label for="menu">
+                <img src="/images/menu.png" alt="">
+            </label>
+            <nav class="navbar"> <!-- Cree un barra de navegacion para que el usuario apretando cualquiera e las opciones, lo mande al html que requiera el mismo-->
+                <div class="menu-1">
+                    <ul>
+                        <li><a href="/html/ecommerce.html">Inicio</a></li>
+                        <li><a href="/html/about us.html">Nosotros</a></li>
+                        <li><a href="/html/contact.html">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <a class="logo-2" href="/html/ecommerce.html"><span id="span-1">In</span><span id="span-2">com</span><span id="span-3">pra</span><span id="span-4">ble</span></a>
+                <img class="logo-2" src="/images/perro.svg" alt="">
+
+                <div class="menu-2">
+                    <ul>
+                        <li><a href="/html/catalogo.html">Catalogo</a></li>
+
+                    </ul>
+                    <div class="socials">
+                        <a href="#">
+                            <div class="social">
+                                <img src="/images/s1.svg" alt="">
+                                
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="social">
+                                <img src="/images/s2.svg" alt="">
+
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="social">
+                                <img src="/images/s3.svg" alt="">
+
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="menu-2"> <!-- Este ultimo menu va a contener el icono del carrito-->
+                    <i class="bx bx-shopping-bag" id="cart-icon"></i>
+
+                    <div class="cart"> <!--Carrito-->
+                        <h2 class="cart-title">Tu Carrito</h2>
+
+                        <!--Contenido del Carrito-->
+                        <div class="cart-content">
+
+                        </div>
+
+                        <!--Total-->
+                        <div class="total">
+                            <div class="total-title">Total</div>
+                            <div class="total-price">$0</div>
+                        </div>
+
+                        <!--Buy Button-->
+                        <button type="button" class="btn-buy">Comprar Ahora</button>
+
+                        <!--Cart Close-->
+                        <i class="bx bx-x" id="cart-close"></i>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+        <!--Shop Section-->
+        <section class="shop-container">
+            <h2 class="section-title" id="h1-shop">Catalogo </h2>
     
+            <!--Contenido-->
+            <div class="shop-content">
+    
+                <!--Box 1-->
+                <div class="product-box">
+                    <img src="/images/Tele 1.png" alt="" class="product-img">
+                    <h2 class="product-title">Tv Samsung "47"</h2>
+                    <span class="product-price">$900</span>
+                    <i class="bx bx-shopping-bag add-cart"></i>
+                </div>
+                <!--Box 2-->
+                <div class="product-box">
+                    <img src="/images/TV slider-1.jpg" alt="" class="product-img">
+                    <h2 class="product-title">LG OLED "evo 83"</h2>
+                    <span class="product-price">$1400</span>
+                    <i class="bx bx-shopping-bag add-cart"></i>
+                </div>
+                <!--Box 3-->
+                <div class="product-box">
+                    <img src="/images/tele 3.png" alt="" class="product-img">
+                    <h2 class="product-title">TCL "32"</h2>
+                    <span class="product-price">$300</span>
+                    <i class="bx bx-shopping-bag add-cart"></i>
+                </div>
+                <!--Box 4-->
+                <div class="product-box">
+                    <img src="/images/tele 4.jpg" alt="" class="product-img">
+                    <h2 class="product-title">LG"32"</h2>
+                    <span class="product-price">$600</span>
+                    <i class="bx bx-shopping-bag add-cart"></i>
+                </div>
+                <!--Box 5-->
+                <div class="product-box">
+                    <img src="/images/ampli 1.png" alt="" class="product-img">
+                    <h2 class="product-title">Fender Amplificador "30w"</h2>
+                    <span class="product-price">$1150</span>
+                    <i class="bx bx-shopping-bag add-cart"></i>
+                </div>
+                <!--Box 6-->
+                <div class="product-box">
+                    <img src="/images/ampli 3.jpg" alt="" class="product-img">
+                    <h2 class="product-title">Marshall Aplificador "300w"</h2>
+                    <span class="product-price">$1300</span>
+                    <i class="bx bx-shopping-bag add-cart"></i>
+                </div>
+                <!--Box 7-->
+                <div class="product-box">
+                    <img src="/images/ampli 2.png" alt="" class="product-img">
+                    <h2 class="product-title">Marshall Amplificador "100W"</h2>
+                    <span class="product-price">$1650</span>
+                    <i class="bx bx-shopping-bag add-cart"></i>
+                </div>
+                <!--Box 8-->
+                <div class="product-box">
+                    <img src="/images/ampli 1.png" alt="" class="product-img">
+                    <h2 class="product-title">Fender Amplificador "30w"</h2>
+                    <span class="product-price">$2000</span>
+                    <i class="bx bx-shopping-bag add-cart"></i>
+                </div>
+                <!--Box 9-->
+                <div class="product-box">
+                    <img src="/images/LG K 61.png" alt="" class="product-img">
+                    <h2 class="product-title">LG "K61"</h2>
+                    <span class="product-price">$70</span>
+                    <i class="bx bx-shopping-bag add-cart"></i>
+                </div>
+                <!--Box 10-->
+                <div class="product-box">
+                    <img src="/images/huawei mate 20 lite dual sim en oro de 64gb.jpg" alt="" class="product-img">
+                    <h2 class="product-title">Huawei "Mate 20"</h2>
+                    <span class="product-price">$120</span>
+                    <i class="bx bx-shopping-bag add-cart"></i>
+                </div>
+                <!--Box 11-->
+                <div class="product-box">
+                    <img src="/images/samsung m23 5g.png" alt="" class="product-img">
+                    <h2 class="product-title">M23 "5G"</h2>
+                    <span class="product-price">$550</span>
+                    <i class="bx bx-shopping-bag add-cart"></i>
+                </div>
+                <!--Box 12-->
+                <div class="product-box">
+                    <img src="/images/Galaxy A23 5G.jpg" alt="" class="product-img">
+                    <h2 class="product-title">A23 "5G"</h2>
+                    <span class="product-price">$800</span>
+                    <i class="bx bx-shopping-bag add-cart"></i>
+                </div>
+            </div>
+            
+        </section>
+
+        <footer class="footer container">
+
+            <a class="logo-2" href="/html/ecommerce.html"><span id="span-footer"></span>Incomprable</a>
+            <div class="links">
+                <h4>Enlaces</h4>
+                <ul>
+                    <li><a href="/html/ecommerce.html">Inicio</a></li>
+                    <li><a href="/html/about us.html">Nosotros</a></li>
+                    <li><a href="/html/contact.html">Contacto</a></li>
+                    <li><a href="/html/catalogo.html">Catalogo</a></li>
+                </ul>
+            </div>
+            <div class="links">
+                <h4>Enlaces</h4>
+                <ul>
+                    <li><a href="/html/ecommerce.html">Inicio</a></li>
+                    <li><a href="/html/about us.html">Nosotros</a></li>
+                    <li><a href="/html/contact.html">Contacto</a></li>
+                    <li><a href="/html/catalogo.html">Catalogo</a></li>
+                </ul>
+            </div>
+            <div class="links">
+                <h4>Enlaces</h4>
+                <ul>
+                    <li><a href="/html/ecommerce.html">Inicio</a></li>
+                    <li><a href="/html/about us.html">Nosotros</a></li>
+                    <li><a href="/html/contact.html">Contacto</a></li>
+                    <li><a href="/html/catalogo.html">Catalogo</a></li>
+                </ul>
+            </div>
+            <div class="links">
+                <h4>Enlaces</h4>
+                <ul>
+                    <li><a href="/html/ecommerce.html">Inicio</a></li>
+                    <li><a href="/html/about us.html">Nosotros</a></li>
+                    <li><a href="/html/contact.html">Contacto</a></li>
+                    <li><a href="/html/catalogo.html">Catalogo</a></li>
+                </ul>
+            </div>
+            <div class="socials">
+                <a href="#">
+                    <div class="social">
+                        <img src="/images/s1.svg" alt="">
+                        
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="social">
+                        <img src="/images/s2.svg" alt="">
+    
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="social">
+                        <img src="/images/s3.svg" alt="">
+    
+                    </div>
+                </a>
+            </div>
+    
+        </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <script src="/ecommerce.js"></script>
 </body>
+
 </html>
