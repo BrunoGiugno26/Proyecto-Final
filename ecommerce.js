@@ -1,4 +1,4 @@
-//?Funcionamiento del html ecommerce
+//?Funcionamiento del carrito de compras en el archivo html ecommerce.html
 
 // Para abrir y cerrar el carrito
 
@@ -188,3 +188,19 @@ function cartBoxComponent(title,price,imgSrc){
     </div>
     `;
 }
+
+//?Funcionamiento del swiper del header del archivo ecommerce.html
+
+var swiper = new Swiper (".myswiper-1",{
+    slidesPerView:1,
+    spaceBetween: 30,
+    loop:true,
+    pagination:{
+        el:".swiper-pagination",
+        clickable:true,
+    },
+    navigation:{
+        nextEl:".swiper-button-next",
+        prevEl:".swiper-button-prev",
+    }
+});

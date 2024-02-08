@@ -37,7 +37,7 @@ body{
 }
 
 .swiper-button-prev{
-    color: red;
+    color: rgb(0, 89, 255)
 }
 
 .swiper-pagination-bullet{
@@ -46,7 +46,7 @@ body{
 }
 
 .swiper-pagination-bullet-active{
-    background-color: red;
+    background-color: rgb(0, 89, 255)
 }
 
 /* Header menu*/
@@ -177,7 +177,7 @@ body{
 }
 
 .slider-txt h1{
-    font-size: 70px;
+    font-size: 50px;
     color: black;
     text-transform: uppercase;
     font-weight: 800;
