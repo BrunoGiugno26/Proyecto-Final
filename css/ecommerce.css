@@ -659,6 +659,8 @@ section{
 
     .slider{
         text-decoration: none;
+        display: block;
+        height: 750px;
     }
 
     .slider-txt{
@@ -669,7 +671,7 @@ section{
     }
 
     .slider-txt h1{
-        font-size: 50px;
+        font-size: 40px;
     }
 
     .slider-txt p{
@@ -683,12 +685,15 @@ section{
 
     .slider-img{
         width: 100%;
-        text-align: center;
+        height: 35%;
+        text-align:center;
+        
     }
 
     .slider-img img{
         margin-left: 0px;
-        width: 100px;
+        width: 100%;
+        height: 100%;
     }
 
 .swiper-horizontal > .swiper-pagination-bullet,
@@ -830,6 +835,7 @@ section{
 
 @media(max-width:991px){
     .menu{
+        margin-top: 30px;
         padding: 20px;
         justify-content: space-between;
     }
@@ -890,17 +896,17 @@ section{
     }
 
     .Nosotros{
-        display: grid;
-        grid-template-columns: 1fr 0.5fr;
-        column-gap: 2rem;
+        display: block;
+        justify-content: center;
+        text-align: center;
     }
     
     .nosotros_imagen{
         margin-top: 150px;
-        width: 300px;
-        display: flex;
+        width: 100%;
+        display: block;
+        justify-content: center;
         margin-left: 15px;
-        gap: 4px;
     }
     .nosotros_texto{
         color: black;
@@ -918,7 +924,7 @@ section{
         color: white;
         text-transform: uppercase;
         font-weight: 600;
-        font-size: 50px;
+        font-size: 40px;
         margin-top: 300px;
     }
 
