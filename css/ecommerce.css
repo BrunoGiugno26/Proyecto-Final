@@ -660,6 +660,7 @@ section{
     .slider{
         text-decoration: none;
         display: block;
+        margin-top: 30px;
         height: 750px;
     }
 
@@ -707,6 +708,11 @@ section{
         padding: 30px;
         flex-direction: column;
     }
+
+    .logo-info{
+        margin-left: 10px;
+        padding: 30px;
+    }
     
     .info-img{
         width: 100%;
@@ -721,11 +727,20 @@ section{
     
     .info-txt{
         width: 100%;
-        text-align: center;
     }
-    
+    #h2-info{
+        font-size: 40px;
+        text-align: center;
+        margin-right: 60px;
+    }
     .info-txt p{
         font-size: 16px;
+    }
+
+    .info-txt-right{
+        text-align:start;
+        gap: 3px;
+        margin-right: 60px;
     }
     
     .btn-1{
@@ -895,6 +910,12 @@ section{
         margin: 1px 0 0 10px;
     }
 
+    .contenedor{
+        display: block;
+        align-items: center;
+        justify-content: center;
+    }
+
     .Nosotros{
         display: block;
         justify-content: center;
@@ -902,15 +923,15 @@ section{
     }
     
     .nosotros_imagen{
-        margin-top: 150px;
-        width: 100%;
-        display: block;
-        justify-content: center;
-        margin-left: 15px;
+        margin-top: 30px;
+        width: 800px;
+        height: 300px;
+        display:flex;
     }
     .nosotros_texto{
         color: black;
-        margin-left: 20px;
+        margin: 30px;
+        padding: 9px;
         font-weight: 600;
         text-transform: uppercase;
     }
@@ -924,12 +945,21 @@ section{
         color: white;
         text-transform: uppercase;
         font-weight: 600;
-        font-size: 40px;
-        margin-top: 300px;
+        font-size: 20px;
+        margin-top: 200px;
     }
 
     #h1-nosotros{
         background-color: black;
+    }
+    .seccion-map{
+        display: block;
+        align-items: center;
+        justify-content: center;
+    }
+    iframe{
+        width: 75%;
+        height: 700px;
     }
     
     .footer{
