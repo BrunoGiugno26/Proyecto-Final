@@ -76,6 +76,12 @@ body{
     align-items: center;
 }
 
+.menu-3{
+    margin-left: 100px;
+    display: flex;
+    align-items: center;
+}
+
 .logo-1{
     width: 0;
 }
@@ -436,51 +442,6 @@ section{
     background-color: aqua;
     color: white;
 }
-
-/* Responsive del catalogo de productos de el html principal ecommerce.html*/
-
-@media (max-width:100px){
-    .navbar{
-        padding: 15px;
-    }
-    .container{
-        width: 90%;
-        margin: 0 auto;
-    }
-    .section{
-        padding: 3rem 0 rem;
-    }
-
-    .shop{
-        margin-top: 2rem;
-    }
-}
-
-/*Para dispositivos medianos*/
-
-@media (max-width:400px){
-    .navbar{
-        padding: 11px;
-    }
-    .logo{
-        font-size: 1rem;
-    }
-    .cart{
-        width:320px
-    }
-}
-
-/* Para dispositivos pequeños*/
-
-@media (max-width:360px){
-    .shop{
-        margin-top: 1rem;
-    }
-    .cart{
-        width: 280px;
-    }
-}
-
 /* Parte de la seccion informacion*/
 
 .logo-info{
@@ -619,24 +580,26 @@ section{
     text-transform: uppercase;
 }
 
-/* Parte Responsvie para dispositivos moviles ( Header y Footer)*/
+/* Parte Responsvie para el archivo ecommerce.html dispositivos moviles ( Header, Section y Footer)*/
 
 @media(max-width:991px){
     .navbar{
-        display: block;
+        display: flexbox;
     }
     .menu{
         padding: 20px;
         justify-content: space-between;
     }
-    .menu-1{
-        margin-right: 100px;
-    }
 
     .menu-2{
+        display: none;
         margin-left: 100px;
         padding: 20px;
         justify-content: space-between;
+    }
+
+    .menu-3{
+        display: none;
     }
 
     .logo-1{
@@ -657,7 +620,7 @@ section{
         left: 0;
         right: 0;
         background-color: black;
-        display: none;
+        display: none
     }
 
     .menu .navbar ul li{
@@ -720,7 +683,11 @@ section{
     bottom:-7px;
     }
 
-    
+    .shop-content{
+        max-width: 300px;
+        margin: auto;
+        width: 100%;
+    }
 
     .info{
         padding: 30px;
@@ -728,8 +695,8 @@ section{
     }
 
     .logo-info{
-        margin: -30px;
-        padding: 30px;
+        margin: 0 -20px;
+        padding: 3px;
     }
     
     .info-img{
@@ -738,9 +705,9 @@ section{
     }
     
     .info-img img{
-        width: 400px;
+        width: 250px;
         height: 200px;
-        margin-bottom: 25px;
+        margin-bottom: 10px;
     }
     
     .info-txt{
@@ -944,11 +911,10 @@ section{
     }
     
     .nosotros_imagen{
-        margin-top: 30px;
-        margin: 2px;
-        padding:20px;
-        width: 90%;
-        height: 300px;
+        margin: 0 -1px;
+        padding: 13px;
+        width: 100%;
+        height: 200px;
     }
     .nosotros_texto{
         color: black;
@@ -986,9 +952,9 @@ section{
     }
 
     .Contacto-gb{
-        width: 150%;
+        width: 100%;
         height: 300px;
-        margin: 0 -200px;
+        margin: 0 -60px;
         background-image: url(/images/perro.svg);
         background-size: cover;
         background-repeat: repeat;
@@ -1001,6 +967,7 @@ section{
 
     #h1-contact{
         font-weight: 800;
+        margin-top: 70px;
         text-transform: uppercase; 
         color: black;
         font-size: 40px;
@@ -1027,7 +994,7 @@ section{
 
 .Contacto-gb{
     background-image: url(/images/perro.svg);
-    height: 600px;
+    height: 300px;
     background-size: cover;
     background-repeat: repeat;
 }
