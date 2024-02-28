@@ -167,6 +167,8 @@ body{
 
 .slider{
     display: flex;
+    width: 100%;
+    height: 500px;
     justify-content: center;
     background-color: white;
 }
@@ -438,7 +440,7 @@ section{
 /* Responsive del catalogo de productos de el html principal ecommerce.html*/
 
 @media (max-width:100px){
-    .nav{
+    .navbar{
         padding: 15px;
     }
     .container{
@@ -457,7 +459,7 @@ section{
 /*Para dispositivos medianos*/
 
 @media (max-width:400px){
-    .nav{
+    .navbar{
         padding: 11px;
     }
     .logo{
@@ -614,13 +616,21 @@ section{
 /* Parte Responsvie para dispositivos moviles ( Header y Footer)*/
 
 @media(max-width:991px){
+    .navbar{
+        display: block;
+    }
     .menu{
         padding: 20px;
         justify-content: space-between;
     }
+    .menu-1{
+        margin-right: 100px;
+    }
 
     .menu-2{
-        display: none;
+        margin-left: 100px;
+        padding: 20px;
+        justify-content: space-between;
     }
 
     .logo-1{
@@ -672,7 +682,7 @@ section{
     }
 
     .slider-txt h1{
-        font-size: 40px;
+        font-size: 30px;
     }
 
     .slider-txt p{
@@ -704,13 +714,15 @@ section{
     bottom:-7px;
     }
 
+    
+
     .info{
         padding: 30px;
         flex-direction: column;
     }
 
     .logo-info{
-        margin-left: 10px;
+        margin: -30px;
         padding: 30px;
     }
     
@@ -784,13 +796,16 @@ section{
     
     .footer{
         padding: 30px;
-        flex-direction: column;
+        flex-direction: row;
         text-align: center;
     }
     
     .links h4{
-        margin: 20px 0px 10px 0px;
+        display: flex;
+        padding: 3px;
+        margin: 30px;
     }
+    
 }
 
 
@@ -846,7 +861,7 @@ section{
     background-color: black;
 }
 
-/* Parte Responsvie para dispositivos moviles (archivo about us.html)*/
+/* Parte Responsvie para dispositivos moviles (archivo about us.html y contact.html)*/
 
 @media(max-width:991px){
     .menu{
@@ -924,9 +939,10 @@ section{
     
     .nosotros_imagen{
         margin-top: 30px;
-        width: 800px;
+        margin: 20px;
+        padding:20px;
+        width: 90%;
         height: 300px;
-        display:flex;
     }
     .nosotros_texto{
         color: black;
@@ -934,6 +950,7 @@ section{
         padding: 9px;
         font-weight: 600;
         text-transform: uppercase;
+        text-align: center;
     }
 
     .centrar-texto{
@@ -961,6 +978,33 @@ section{
         width: 75%;
         height: 700px;
     }
+
+    .Contacto-gb{
+        width: 150%;
+        height: 300px;
+        margin: 0 -200px;
+        background-image: url(/images/perro.svg);
+        background-size: cover;
+        background-repeat: repeat;
+    }
+
+    .formulario{
+        display: block;
+        justify-content: center;
+    }
+
+    #h1-contact{
+        font-weight: 800;
+        text-transform: uppercase; 
+        color: black;
+        font-size: 40px;
+    }
+    
+
+    .campo{
+        margin: 0 -30px;
+        padding: 3px;
+    }
     
     .footer{
         padding: 30px;
@@ -986,8 +1030,8 @@ section{
     font-family: "Poppins", sans-serif; 
     color: black;
     font-size: 60px;
-    padding-top: 230px;
-    margin-bottom: 100px;
+    padding-top: 150px;
+    margin-bottom: 20px;
 }
 
 .h1-formulario{
