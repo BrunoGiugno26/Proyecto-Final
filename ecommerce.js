@@ -4,7 +4,7 @@
 
 const carIcon = document.querySelector("#cart-icon");
 const cart = document.querySelector(".cart");
-const CloseCart = document.querySelector("#cart-close");
+const closeCart = document.querySelector("#cart-close");
 
 // Creo los eventos para que funcionen
 
@@ -12,7 +12,7 @@ carIcon.addEventListener("click", () => {
     cart.classList.add("active");
 });
 
-CloseCart.addEventListener("click",() =>{
+closeCart.addEventListener("click", () => {
     cart.classList.remove("active");
 })
 
@@ -24,13 +24,13 @@ if(document.readyState == "loading"){
     start();
 }
 
-// Comenzar
+//Comenzar
 
 function start(){
     addEvents()
 }
 
-// Actualizar y volver a Presentar
+// Actualizar y volver a presentar
 
 function update(){
     addEvents();
@@ -49,22 +49,20 @@ function addEvents(){
         btn.addEventListener("click", handle_removeCartItem);
     });
 
+    // Cambiar cantidad de Articulos
 
-// Cambiar cantidad de Articulos
+    let cartQuantity_inputs = document.querySelectorAll(".cart-quantity");
 
-let cartQuantity_inputs = document.querySelectorAll(".cart-quantity");
+    cartQuantity_inputs.forEach((input) => {
+        input.addEventListener("change",handle_changeItemQuantity);
+    });
 
-cartQuantity_inputs.forEach((input) => {
-    input.addEventListener("change",handle_changeItemQuantity);
-});
+    // Añadir articulos al carrito
 
-// Añadir Articulos al Carrito
-
-let addCart_btns = document.querySelectorAll(".add-cart");
-
-addCart_btns.forEach((btn) =>{
-    btn.addEventListener("click",handle_addCartItem);
-});
+    let addCart_btns = document.querySelectorAll(".add-cart");
+    addCart_btns.forEach((btn) => {
+        btn.addEventListener("click",handle_addCartItem);
+    });
 }
 
 // Comprar Orden
@@ -75,7 +73,6 @@ buy_btn.addEventListener("click",handle_buyOrden);
 // Ahora le doy funcionamiento al manejo de los eventos
 
 let itemsAdded = [];
-
 function handle_addCartItem(){
     let product = this.parentElement;
     let title = product.querySelector(".product-title").innerHTML;
@@ -85,36 +82,37 @@ function handle_addCartItem(){
     console.log(title,price,imgSrc);
 
 
-    let newToAdd = {
-        title,
-        price,
-        imgSrc,
-    };
+let newToAdd = {
+    title,
+    price,
+    imgSrc,
+};
 
-    // El elemento de manejo ya existente
+// El elemento de manejo ya existente
 
-    if(itemsAdded.find((el) => el.title == newToAdd.title)){
-        alert("Este Articulo ya existe");
-        return;
-    }else{
-        itemsAdded.push(newToAdd);
-    }
+if(itemsAdded.find((el) => el.title == newToAdd.title)){
+    alert("Este Articulo ya existe");
+    return;
+}else{
+    itemsAdded.push(newToAdd);
+}
 
-    // Añadir Productos al carrito
+// Añadir Productos al carrito
 
-    let cartBoxElement = cartBoxComponent(title,price,imgSrc);
-    let newNode = document.createElement("div");
-    newNode.innerHTML = cartBoxElement;
-    const cartContent = cart.querySelector(".cart-content");
-    cartContent.appendChild(newNode);
+let cartBoxElement = cartBoxComponent(title,price,imgSrc);
+let newNode = document.createElement("div");
+newNode.innerHTML = cartBoxElement;
+const cartContent = cart.querySelector(".cart-content");
+cartContent.appendChild(newNode);
 
-    update();
+update();
+
 }
 
 function handle_removeCartItem(){
     this.parentElement.remove();
 
-    itemsAded = itemsAded.filter(
+    itemsAdded = itemsAdded.filter(
         (el) =>
         el.title != this.parentElement.querySelector(".cart-product-title").innerHTML
     );
@@ -126,14 +124,14 @@ function handle_changeItemQuantity(){
     if(isNaN(this.value) || this.value < 1){
         this.value = 1;
     }
-    this.value = Math.floor(this.value); // Para mantener el numero entero y no quede ne decimal
+    this.value = Math.floor(this.value); // Para mantener el numero entero
 
     update();
 }
 
 function handle_buyOrden(){
     if(itemsAdded.length <= 0){
-        alert("Aun no hay ningun pedido para realizar! \nPor favor, haga un pedido primero");
+        alert("¡Aun no hay ningun pedido para realizar! \nPor favor, haga un pedido primero");
         return;
     }
 
@@ -144,28 +142,28 @@ function handle_buyOrden(){
     update();
 }
 
-// Funciones de Actualizar y Renderizar
+//Funciones de Actualizar y Renderizar
 
 function updateTotal(){
     let cartBoxes = document.querySelectorAll(".cart-box");
     const totalElement = cart.querySelector(".total-price");
     let total = 0;
 
-    cartBoxes.forEach((cartBox) =>{
+    cartBoxes.forEach((cartBox) => {
         let priceElement = cartBox.querySelector(".cart-price");
-        let price = parseFloat (priceElement.innerHTML.replace("$",""));
+        let price = parseFloat (priceElement.innerHTML.replace ("$",""));
         let quantity = cartBox.querySelector(".cart-quantity").value;
 
         total += price * quantity;
     });
 
     total = total.toFixed(2);
-    // Quiere decir que quiero mantener 2 digitos despues del punto decimal
+    //Mantener 2 dijitos despues del punto decimal
 
     totalElement.innerHTML = "$" + total;
 }
 
-//  =========== Componentes HTML ============
+// ========= Componentes HTML ============
 
 function cartBoxComponent(title,price,imgSrc){
     return `
