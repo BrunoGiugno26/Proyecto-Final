@@ -747,12 +747,13 @@ section{
     }
     .info-txt p{
         font-size: 16px;
+        text-align: center;
+        margin: 5px;
     }
 
     .info-txt-right{
-        text-align:start;
-        gap: 3px;
-        margin-right: 60px;
+        text-align:center;
+        margin: 60px;
     }
     
     .btn-1{
@@ -939,7 +940,7 @@ section{
     
     .nosotros_imagen{
         margin-top: 30px;
-        margin: 20px;
+        margin: 2px;
         padding:20px;
         width: 90%;
         height: 300px;
